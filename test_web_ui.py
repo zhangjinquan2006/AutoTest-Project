@@ -9,6 +9,7 @@ from selenium.webdriver.edge.service import Service
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 
+@pytest.mark.skip(reason="云端无GUI界面，跳过UI测试")
 def test_web_login_success():
     """测试：在 Edge 网页上真实输入账号密码，点击登录"""
 
